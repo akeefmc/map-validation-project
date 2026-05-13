@@ -35,6 +35,7 @@ for segment in road_segments:
         print(f" ISSUE:{segment['id']} has invalid latitude: {lat}")
     elif lon < -180 or lon > 180:
         print(f" ISSUE: {segment['id']} has invalid longitude: {lon}")
+        
 # duplicate coordinate validator
 seen_coordinates = set()
 for segment in road_segments:
